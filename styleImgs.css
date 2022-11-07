@@ -15,23 +15,24 @@ body {
 ul{
     gap: 20px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+
     align-items: center;
     justify-content: center;
-    
-    list-style: none;
+
+
 }
 
 body  ul li  {   
     
-    display: flex;
-   
+    display: flex;  
         
-    overflow: hidden;
-    transition: 4px;    
+    overflow: hidden;    
    
     border-radius: 20px;
-    width: 490px;   
+    width: 240px;   
+    height: 330px;
  
      
 }

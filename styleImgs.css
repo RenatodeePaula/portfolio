@@ -10,8 +10,16 @@
 body {
     background: var(--bg-cards);   
     margin: 20px;
+    
 }
 
+body header section div {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    border: 6px solid red;
+}
 ul{
     gap: 20px;
     display: flex;
@@ -20,6 +28,7 @@ ul{
 
     align-items: center;
     justify-content: center;
+   
 
 
 }

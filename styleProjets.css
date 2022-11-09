@@ -1,4 +1,7 @@
-
+* {
+    margin:0;
+    padding: 0pc;
+}
 :root {
     --body-bg-color: #22212C;
     --text-color: #837E9F;
@@ -7,32 +10,34 @@
     --border-profile-img:#00FF00;
 }
 
-body {
-    background: var(--bg-cards);   
+body {    
+    background: var(--body-bg-color);   
     margin: 20px;
-}
+   
+}   
 
-ul {
-   
+ul {    
     display: flex;
-    flex-direction: column;
-   
     justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
     
     list-style: none;
+
+    margin: 30px;
+    gap: 30px;
 }
 
-body  ul li  {   
-    
-    display: flex;
-   
+body  ul li  {      
         
     overflow: hidden;
     transition: 4px;    
    
     border-radius: 20px;
     width: 240px;   
-    height: 330px; 
+    height: 330px;
+    
+    border-bottom:  solid var(--text-color);
      
 }
 
@@ -50,16 +55,11 @@ a img:hover {
 }
 
 
-body {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-}
+
 h1 {
     font-family: 'Merriweather Sans';
     color: var(--text-color);
     font-size: 12px;
+    
 }
   

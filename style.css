@@ -18,22 +18,18 @@ body  {
     background: var(--body-bg-color);
     padding: 40px;
     font-family: 'Merriweather Sans';
-    color: var(--text-color);
-    
+    color: var(--text-color);    
 }
 
 
 body section { 
     background: var(--bg-cards); 
-
 }
 
             /* ========HEADER=========== */
 header {
     display: flex;
-    gap: 30px;   
-   
-   
+    gap: 30px;      
 }
 
             /*======== Perfil============ */
@@ -54,8 +50,7 @@ header {
     border: 2px solid var(--border-profile-img);
     border-radius: 50%;
     margin-top: 32px;
-    margin-bottom:30px;
-    
+    margin-bottom:30px;    
 }
 
 .profile div h1 {   
@@ -74,22 +69,21 @@ header {
     font-weight: 300;
     font-size: 13px;   
 }
-    /*--------MENU-MAIN---------- */
-            /* Meus projetos */
+    /*---------------MENU-MAIN---------- */
+    /*=========== Meus projetos========= */
 
 .menu-main {
-    width: 100%;
-    
+    width: 100%;    
 }
+    /* ===============MY-ONYX============== */
 
 .box-my-onix {   
     gap: 30px;
-    display: flex; 
-    
+    display: flex;     
 }
+
 .my-onix {       
         display: flex;
-
         flex-direction: column;
         align-content: center;
         justify-content: center;
@@ -102,25 +96,17 @@ header {
         padding: 30px;
       
         font-weight: 700;
-        font-size: 16px;    
-       
-
+        font-size: 16px;
 }
 
-
-
-.my-onix h3 {
- display: inline-block;
-    
-}
 .folder {
     display: flex;
     gap: 17.67px;
    
     justify-content: center;
-    align-items: flex-end;
-    
+    align-items: flex-end;    
 }
+
 .my-onix p {       
     font-weight: 400;
     font-size: 14px;
@@ -128,17 +114,33 @@ header {
     max-width: 400px;
     margin-top: 21px;
 }
-.star {
-    display: flex; 
-    /* border: red solid 1px ; */
-   gap:8px; 
-   
-   margin-top: 30px;
+
+#star {
+    display: flex;    
+    gap:8px;    
+    
+    width: 100%;
 }
-.star :nth-child(2) {
+
+#star :nth-child(2) {
     margin-right: 16px;
     
 }
+
+#star-javascript {
+    display: flex;
+    justify-content: center;
+    gap:181px;
+    margin-top: 27px;
+}
+
+#javascript {  
+    display: flex;
+    align-items: center;
+    gap: 8px;  
+}   
+
+    /*==============RECENT POSTS================== */
 
 .recent-posts,
 .my-projets {  
@@ -152,7 +154,6 @@ header {
     
 }
 
-
 .my-projets a,
 .recent-posts a  {
     text-decoration: none;
@@ -160,20 +161,17 @@ header {
     margin-left: 30px;
     margin-right: 30px;
 }
-
-.recent-posts {
-    margin: 30px;
-    margin-right: 0;
+    /* ============ASIDE================ */
+.aside {
+    display: flex;   
+    gap: 30px;
 }
-
-    /* LINKS DE REDE SOCIAL */    
+    /* ========LINKS DE REDEs SOCIAIS ======*/    
 .social-links {
-
     min-width: 348px; 
     height: 348px;     
     border-radius: 20px;
     margin-top: 30px;  
-
 }
 
 .social-links div ul {
@@ -187,9 +185,9 @@ header {
     margin-bottom: calc((348px - (34px + 34px)) / 11); 
     display: flex;
     align-items: center;
-    transition: transform .4s;
-  
+    transition: transform .4s;  
 }
+
 .social-links div ul a li svg {
     margin-right: 20px;
 }
@@ -203,21 +201,60 @@ header {
     transform: scale(1.07);
 }
 
-        /* ============ASIDE================== */
-.aside {
-    display: flex;
-    
-    
+    /* ==========RECENT POSTS======= */
+.recents-error {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+ 
+}
+.recent-posts {
+    margin-top: 30px;  
+   
 }
 
-        /* ===========TECNOLOGIAS=============== */
+    /*================ERROR================ */
+.error {
+    display: flex;  
+    
+    margin-top: 30px;
+    
+    height: 201px;   
+
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.error img {
+    margin: 30px;    
+    height: 128px;   
+    border-radius: 50%;       
+}
+
+.error-date {    
+    display: flex;
+    flex-direction: column; 
+    margin-top: 30px;
+    gap: 15px;
+   
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;    
+}
+
+.error-date :nth-child(2){     
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 23px;   
+}
+
+    /* ===========TECNOLOGIAS=============== */
 .tecnology {    
     width: 348px;
-    height: 208px;   
-     
+    height: 208px;        
     margin-top: 30px;  
-    border-radius: 30px;
-      
+    border-radius: 30px;      
 }
 
 .tecnology h1 {    
@@ -225,22 +262,19 @@ header {
     font-size: 20px;
     line-height: 25px;
     width: 121px;
-    height: 26px;  
-    
+    height: 26px;      
     padding-top: 30px;
     padding-left: 20px;
     padding-bottom: 20px;
 }
 
-.tecnology div ul {   
-    height: 128px;
-    
+.tecnology div ul {  
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
+    height: 128px;     
     margin-left: 30px;
     margin-top: 20px;
-    gap: 15px;
-     
+    gap: 15px;     
 }
 
 .tecnology div ul li {    
@@ -249,8 +283,7 @@ header {
     align-items: center;
 
     width: 86px;
-    height: 24px; 
-    
+    height: 24px;     
     border-radius: 20px;     
 
     list-style: none;     
@@ -267,8 +300,7 @@ header {
     width: 348px;
     height: 349px;
     position: absolute;
-    border-radius: 20px; 
-    
+    border-radius: 20px;     
     margin-top: 30px;
 }
 

@@ -111,15 +111,14 @@ header {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    max-width: 400px;
+    
     margin-top: 21px;
 }
 
 #star {
     display: flex;    
-    gap:8px;    
+    gap:8px;      
     
-    width: 100%;
 }
 
 #star :nth-child(2) {
@@ -127,18 +126,25 @@ header {
     
 }
 
-#star-javascript {
+#star-javascript { 
     display: flex;
-    justify-content: center;
-    gap:181px;
+    width: 100%;
     margin-top: 27px;
+   
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-between;
 }
 
-#javascript {  
+
+
+#javascript {
+    /* width: 100%; */
     display: flex;
     align-items: center;
-    gap: 8px;  
-}   
+    gap: 8px;
+    justify-content: center;
+}  
 
     /*==============RECENT POSTS================== */
 

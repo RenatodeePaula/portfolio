@@ -1,11 +1,11 @@
-     /* ==========RESET============= */
+    /*==========RESET============= */
 * {
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    
+    list-style: none;    
 }
-        /*=================== GERAL =================*/
+    /*============== GERAL =================*/
 :root {
     --body-bg-color: #22212C;
     --text-color: #837E9F;
@@ -15,24 +15,30 @@
   }
         
 body  {   
+    display: flex;    
+    flex-direction: column;
+
     background: var(--body-bg-color);
     padding: 40px;
     font-family: 'Merriweather Sans';
-    color: var(--text-color);    
+    color: var(--text-color);
+    
 }
-
 
 body section { 
     background: var(--bg-cards); 
-}
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
-            /* ========HEADER=========== */
+  }
+    /* ========HEADER=========== */
 header {
     display: flex;
     gap: 30px;      
+
 }
 
-            /*======== Perfil============ */
+    /*======== Perfil============ */
 .profile { 
     display: flex;
     flex-direction: column;
@@ -40,7 +46,7 @@ header {
     
     min-width: 348px;
     height: 292px;     
-    border-radius: 20px;     
+       
 }
 
 .profile div img {      
@@ -75,7 +81,7 @@ header {
 .menu-main {
     width: 100%;    
 }
-    /* ===============MY-ONYX============== */
+    /* ===============MY-ONYX============*/
 
 .box-my-onix {   
     gap: 30px;
@@ -83,20 +89,20 @@ header {
 }
 
 .my-onix {       
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        align-items: flex-start;
-        
-        height: 186px;
-        width: 100%;
-        margin-top: 31px;
-        border-radius: 20px;
-        padding: 30px;
-      
-        font-weight: 700;
-        font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    
+    height: 186px;
+    width: 100%;
+    margin-top: 31px;
+    
+    padding: 30px;
+    
+    font-weight: 700;
+    font-size: 16px;
 }
 
 .folder {
@@ -117,29 +123,23 @@ header {
 
 #star {
     display: flex;    
-    gap:8px;      
-    
+    gap:8px;    
 }
 
 #star :nth-child(2) {
-    margin-right: 16px;
-    
+    margin-right: 16px;    
 }
 
 #star-javascript { 
     display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-between;
+    
     width: 100%;
     margin-top: 27px;
-   
-    flex-wrap: wrap;
-    /* flex-direction: column; */
-    justify-content: space-between;
 }
 
-
-
 #javascript {
-    /* width: 100%; */
     display: flex;
     align-items: center;
     gap: 8px;
@@ -147,7 +147,6 @@ header {
 }  
 
     /*==============RECENT POSTS================== */
-
 .recent-posts,
 .my-projets {  
     display: flex; 
@@ -156,8 +155,7 @@ header {
    
     width: 100%;
     height: 86px;   
-    border-radius: 20px;     
-    
+   
 }
 
 .my-projets a,
@@ -167,16 +165,17 @@ header {
     margin-left: 30px;
     margin-right: 30px;
 }
+
     /* ============ASIDE================ */
 .aside {
     display: flex;   
     gap: 30px;
 }
+
     /* ========LINKS DE REDEs SOCIAIS ======*/    
 .social-links {
     min-width: 348px; 
-    height: 348px;     
-    border-radius: 20px;
+    height: 348px;   
     margin-top: 30px;  
 }
 
@@ -185,12 +184,12 @@ header {
 }
 
 .social-links div ul li {
-    list-style: none;
+    display: flex;
+    align-items: center;
+    
     font-weight: 400;
     font-size: 12px;
     margin-bottom: calc((348px - (34px + 34px)) / 11); 
-    display: flex;
-    align-items: center;
     transition: transform .4s;  
 }
 
@@ -211,25 +210,25 @@ header {
 .recents-error {
     display:flex;
     flex-direction: column;
-    width: 100%;
- 
+    width: 100%; 
 }
+
 .recent-posts {
-    margin-top: 30px;  
-   
+    margin-top: 30px;     
 }
 
     /*================ERROR================ */
 .error {
     display: flex;  
     
-    margin-top: 30px;
-    
+    margin-top: 30px;    
     height: 201px;   
 
     background: #302F3D;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
+}
+li {
+    
 }
 
 .error img {
@@ -240,10 +239,10 @@ header {
 
 .error-date {    
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    gap: 15px;   
+
     margin-top: 30px;
-    gap: 15px;
-   
     font-weight: 700;
     font-size: 18px;
     line-height: 23px;    
@@ -259,8 +258,7 @@ header {
 .tecnology {    
     width: 348px;
     height: 208px;        
-    margin-top: 30px;  
-    border-radius: 30px;      
+    margin-top: 30px;         
 }
 
 .tecnology h1 {    
@@ -277,7 +275,8 @@ header {
 .tecnology div ul {  
     display: flex;
     flex-wrap: wrap;    
-    height: 128px;     
+    height: 128px;
+
     margin-left: 30px;
     margin-top: 20px;
     gap: 15px;     
@@ -289,53 +288,65 @@ header {
     align-items: center;
 
     width: 86px;
-    height: 24px;     
-    border-radius: 20px;     
-
-    list-style: none;     
-    background: #CB92B1;
+    height: 24px;      
+    border-radius: 30px;    
+    background: var(--bg-techs);
     color: #000000;
     font-weight: 700;
     font-size: 10px;
-    text-transform: uppercase; 
-    
+    text-transform: uppercase;  
+    transition: .4s;     
 }
 
-    /*   EXPERIENCIAS */
+
+.tecnology div ul li:hover {
+    background-color:#a86a8e ;
+}
+
+.tecnology div ul a  {
+    text-decoration: none;
+}
+
+    /*==============EXPERIENCIAS============ */
 .experiences-education {
-    width: 348px;
-    height: 349px;
-    position: absolute;
-    border-radius: 20px;     
+    display: flex;
+    flex-direction: column;    
+    
     margin-top: 30px;
+    width: 348px;
+    height: 349px;   
 }
 
-.experiences-education h1 {
-    position: absolute;
-    width: 141px;
-    height: 26px;
-    top: 30px ;
-    left:20px;
-    
+.experiences-education h1 {    
     font-weight: 700;
     font-size: 20px;
+    margin-left: 20px;  
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
-.experiences-education div ul{
-    position: absolute;
-    left: 60px;
-    top: 76px;
-    font-weight: 300px;
+.experiences-education  ul {   
+    width: 175px;
+    height: 243px;  
+    font-weight: 700;
     font-size: 12px;
+    margin-left: 40px;
+    line-height: 18px    
 }
 
-.experiences-education div ul h3{
-    font-weight: 400px;
+
+.experiences-education ul li h4 {
+    font-weight: 200;
 }
 
-#educat {
-   margin-top:409px; 
+.experiences-education ul li {
+    list-style: disc;
 }
+
+
+
+  
+    
 
 footer {
     display: flex;

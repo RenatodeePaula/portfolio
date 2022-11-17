@@ -227,9 +227,6 @@ header {
     background: #302F3D;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-li {
-    
-}
 
 .error img {
     margin: 30px;    
@@ -341,15 +338,28 @@ li {
 
 .experiences-education ul li {
     list-style: disc;
-}
-
-
-
-  
-    
+}    
 
 footer {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+body {
+   
+    flex-wrap: wrap;
+   
+   padding: 5px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 }
 
 
